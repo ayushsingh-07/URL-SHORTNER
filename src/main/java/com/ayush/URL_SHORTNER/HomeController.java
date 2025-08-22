@@ -13,4 +13,10 @@ public class HomeController {
         return "index"; 
     }
 
+    @GetMapping("/about")
+    public String about(Model model) {
+        model.addAttribute("Content", "We are a company dedicated to providing the best services to our customers for URL Shortening needs.");
+        return "about";
+    }
+
 }
